@@ -4,84 +4,101 @@
 
 Index
 
-- [1. はじめに (23min)](#1-はじめに-23min)
-- [2. 基本操作 (6min)](#2-基本操作-6min)
-- [3. ワークスペース (7min)](#3-ワークスペース-7min)
-- [4. OneLake (38min)](#4-onelake-38min)
-  - [4.1. L200 (38min)](#41-l200-38min)
-    - [4.1.1. 概要 (17min)](#411-概要-17min)
-    - [4.1.2. 機能 (21min)](#412-機能-21min)
-- [5. Power BI (13min)](#5-power-bi-13min)
-  - [5.1. L200 (13min)](#51-l200-13min)
-    - [5.1.1. 概要 (6min)](#511-概要-6min)
-    - [5.1.2. Direct Lake (Preview) (7min)](#512-direct-lake-preview-7min)
-- [6. Synapse Data Engineering (65min)](#6-synapse-data-engineering-65min)
-  - [6.1. L200 (65min)](#61-l200-65min)
-    - [6.1.1. 概要 (2min)](#611-概要-2min)
-    - [6.1.2. レイクハウス (16min)](#612-レイクハウス-16min)
-    - [6.1.3. Delta Lake (6min)](#613-delta-lake-6min)
-    - [6.1.4. Apache Spark (17min)](#614-apache-spark-17min)
-    - [6.1.5. ノートブック (4min)](#615-ノートブック-4min)
-    - [6.1.6. チュートリアル (20min)](#616-チュートリアル-20min)
-- [7. Data Factory (108min)](#7-data-factory-108min)
-  - [7.1. L200 (108min)](#71-l200-108min)
-    - [7.1.1. 概要 (6min)](#711-概要-6min)
-    - [7.1.2. コネクタ (8min)](#712-コネクタ-8min)
-    - [7.1.3. パイプライン (45min)](#713-パイプライン-45min)
-    - [7.1.4. データフロー (28min)](#714-データフロー-28min)
-    - [7.1.5. その他/共通 (21min)](#715-その他共通-21min)
-- [8. Synapse Data Warehouse (88min)](#8-synapse-data-warehouse-88min)
-  - [8.1. L200 (88min)](#81-l200-88min)
-    - [8.1.1. 概要 (37min)](#811-概要-37min)
-    - [8.1.2. データの取り込み (7min)](#812-データの取り込み-7min)
-    - [8.1.3. 接続とセキュリティ (6min)](#813-接続とセキュリティ-6min)
-    - [8.1.4. データの表示 (13min)](#814-データの表示-13min)
-    - [8.1.5. データのモデリング (15min)](#815-データのモデリング-15min)
-    - [8.1.6. チュートリアル1 (10min)](#816-チュートリアル1-10min)
-- [9. Synapse Real-Time Analytics (88min)](#9-synapse-real-time-analytics-88min)
-  - [9.1. L200 (88min)](#91-l200-88min)
-    - [9.1.1. 概要 (14min)](#911-概要-14min)
-    - [9.1.2. イベントストリーム (20min)](#912-イベントストリーム-20min)
-    - [9.1.3. KQL データベース (19min)](#913-kql-データベース-19min)
-      - [9.1.3.1. 概要](#9131-概要)
-      - [9.1.3.2. データベースとテーブルの作成](#9132-データベースとテーブルの作成)
-      - [9.1.3.3. データの取得](#9133-データの取得)
-      - [9.1.3.4. Data Factory との接続](#9134-data-factory-との接続)
-    - [9.1.4. KQL (25min)](#914-kql-25min)
-      - [9.1.4.1. 概要](#9141-概要)
-    - [9.1.5. KQL クエリセット (2min)](#915-kql-クエリセット-2min)
-    - [9.1.6. OneLake との統合 (3min)](#916-onelake-との統合-3min)
-    - [9.1.7. Microsoft Fabric ノートブック からの利用 (2min)](#917-microsoft-fabric-ノートブック-からの利用-2min)
-    - [9.1.8. Power BI からの接続 (3min)](#918-power-bi-からの接続-3min)
-- [10. Synapse Data Science (267min)](#10-synapse-data-science-267min)
-  - [10.1. L200 (267min)](#101-l200-267min)
-    - [10.1.1. 概要 (11min)](#1011-概要-11min)
-    - [10.1.2. データの準備 (6min)](#1012-データの準備-6min)
-    - [10.1.3. 実験とモデル (23min)](#1013-実験とモデル-23min)
-    - [10.1.4. Python (12min) ※Optional](#1014-python-12min-optional)
-    - [10.1.5. R (46min) ※Optional](#1015-r-46min-optional)
-    - [10.1.6. Apache Spark (65min)](#1016-apache-spark-65min)
-      - [10.1.6.1. 概要](#10161-概要)
-      - [10.1.6.2. ワークスペース](#10162-ワークスペース)
-      - [10.1.6.3. 開発](#10163-開発)
-    - [10.1.7. チュートリアル (E2E) (32min)](#1017-チュートリアル-e2e-32min)
-- [11. Data Activator](#11-data-activator)
-- [12. 管理者およびガバナンス](#12-管理者およびガバナンス)
+- [1. イントロダクション (31min)](#1-イントロダクション-31min)
+  - [1.1. L100](#11-l100)
+  - [1.2. L200 (31min)](#12-l200-31min)
+    - [1.2.1. はじめに (23min)](#121-はじめに-23min)
+    - [1.2.2. 基本操作 (6min)](#122-基本操作-6min)
+    - [1.2.3. ワークスペース (7min)](#123-ワークスペース-7min)
+  - [1.3. L300](#13-l300)
+- [2. OneLake (38min)](#2-onelake-38min)
+  - [2.1. L100](#21-l100)
+  - [2.2. L200 (38min)](#22-l200-38min)
+    - [2.2.1. 概要 (17min)](#221-概要-17min)
+    - [2.2.2. 機能 (21min)](#222-機能-21min)
+  - [2.3. L300](#23-l300)
+- [3. Power BI (13min)](#3-power-bi-13min)
+  - [3.1. L100](#31-l100)
+  - [3.2. L200 (13min)](#32-l200-13min)
+    - [3.2.1. 概要 (6min)](#321-概要-6min)
+    - [3.2.2. Direct Lake (Preview) (7min)](#322-direct-lake-preview-7min)
+  - [3.3. L300](#33-l300)
+- [4. Synapse Data Engineering (65min)](#4-synapse-data-engineering-65min)
+  - [4.1. L100](#41-l100)
+  - [4.2. L200 (65min)](#42-l200-65min)
+    - [4.2.1. 概要 (2min)](#421-概要-2min)
+    - [4.2.2. レイクハウス (16min)](#422-レイクハウス-16min)
+    - [4.2.3. Delta Lake (6min)](#423-delta-lake-6min)
+    - [4.2.4. Apache Spark (17min)](#424-apache-spark-17min)
+    - [4.2.5. ノートブック (4min)](#425-ノートブック-4min)
+    - [4.2.6. チュートリアル (20min)](#426-チュートリアル-20min)
+  - [4.3. L300](#43-l300)
+- [5. Data Factory (108min)](#5-data-factory-108min)
+  - [5.1. L100](#51-l100)
+  - [5.2. L200 (108min)](#52-l200-108min)
+    - [5.2.1. 概要 (6min)](#521-概要-6min)
+    - [5.2.2. コネクタ (8min)](#522-コネクタ-8min)
+    - [5.2.3. パイプライン (45min)](#523-パイプライン-45min)
+    - [5.2.4. データフロー (28min)](#524-データフロー-28min)
+    - [5.2.5. その他/共通 (21min)](#525-その他共通-21min)
+  - [5.3. L300](#53-l300)
+- [6. Synapse Data Warehouse (88min)](#6-synapse-data-warehouse-88min)
+  - [6.1. L100](#61-l100)
+  - [6.2. L200 (88min)](#62-l200-88min)
+    - [6.2.1. 概要 (37min)](#621-概要-37min)
+    - [6.2.2. データの取り込み (7min)](#622-データの取り込み-7min)
+    - [6.2.3. 接続とセキュリティ (6min)](#623-接続とセキュリティ-6min)
+    - [6.2.4. データの表示 (13min)](#624-データの表示-13min)
+    - [6.2.5. データのモデリング (15min)](#625-データのモデリング-15min)
+    - [6.2.6. チュートリアル1 (10min)](#626-チュートリアル1-10min)
+  - [6.3. L300](#63-l300)
+- [7. Synapse Real-Time Analytics (88min)](#7-synapse-real-time-analytics-88min)
+  - [7.1. L100](#71-l100)
+  - [7.2. L200 (88min)](#72-l200-88min)
+    - [7.2.1. 概要 (14min)](#721-概要-14min)
+    - [7.2.2. イベントストリーム (20min)](#722-イベントストリーム-20min)
+    - [7.2.3. KQL データベース (19min)](#723-kql-データベース-19min)
+      - [7.2.3.1. 概要](#7231-概要)
+      - [7.2.3.2. データベースとテーブルの作成](#7232-データベースとテーブルの作成)
+      - [7.2.3.3. データの取得](#7233-データの取得)
+      - [7.2.3.4. Data Factory との接続](#7234-data-factory-との接続)
+    - [7.2.4. KQL (25min)](#724-kql-25min)
+      - [7.2.4.1. 概要](#7241-概要)
+    - [7.2.5. KQL クエリセット (2min)](#725-kql-クエリセット-2min)
+    - [7.2.6. OneLake との統合 (3min)](#726-onelake-との統合-3min)
+    - [7.2.7. Microsoft Fabric ノートブック からの利用 (2min)](#727-microsoft-fabric-ノートブック-からの利用-2min)
+    - [7.2.8. Power BI からの接続 (3min)](#728-power-bi-からの接続-3min)
+  - [7.3. L300](#73-l300)
+- [8. Synapse Data Science (267min)](#8-synapse-data-science-267min)
+  - [8.1. L100](#81-l100)
+  - [8.2. L200 (267min)](#82-l200-267min)
+    - [8.2.1. 概要 (11min)](#821-概要-11min)
+    - [8.2.2. データの準備 (6min)](#822-データの準備-6min)
+    - [8.2.3. 実験とモデル (23min)](#823-実験とモデル-23min)
+    - [8.2.4. Python (12min) ※Optional](#824-python-12min-optional)
+    - [8.2.5. R (46min) ※Optional](#825-r-46min-optional)
+    - [8.2.6. Apache Spark (65min)](#826-apache-spark-65min)
+      - [8.2.6.1. 概要](#8261-概要)
+      - [8.2.6.2. ワークスペース](#8262-ワークスペース)
+      - [8.2.6.3. 開発](#8263-開発)
+    - [8.2.7. チュートリアル (E2E) (32min)](#827-チュートリアル-e2e-32min)
+  - [8.3. L300](#83-l300)
+- [9. Data Activator](#9-data-activator)
+- [10. 管理者およびガバナンス](#10-管理者およびガバナンス)
+
 
 ---
 
-Note:
 
-* L200: 1000min
-    * L200 - 演習・知識チェック: 678min
-    * L200 - 演習・知識チェック - etc.: 622min
-* L300: 475min
+## 1. イントロダクション (31min)
 
-※70 words / min
+### 1.1. L100
 
----
+N/A
 
-## 1. はじめに (23min)
+### 1.2. L200 (31min)
+
+#### 1.2.1. はじめに (23min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -97,8 +114,7 @@ Note:
 
 * [知識チェック \| Microsoft Fabric を使用したエンドツーエンドの分析の概要](https://learn.microsoft.com/ja-jp/training/modules/introduction-end-analytics-use-microsoft-fabric/5-knowledge-check)
 
-
-## 2. 基本操作 (6min)
+#### 1.2.2. 基本操作 (6min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -107,8 +123,7 @@ Note:
 | 3 | [コンテンツの検索・並べ替え・フィルター処理](https://learn.microsoft.com/ja-jp/fabric/get-started/fabric-search) | 1 |
 | 4 | [Fabric 設定 ウィンドウ](https://learn.microsoft.com/ja-jp/fabric/get-started/fabric-settings) | 1 |
 
-
-## 3. ワークスペース (7min)
+#### 1.2.3. ワークスペース (7min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -117,12 +132,23 @@ Note:
 | 3 | [Microsoft Fabric のワークスペースのロール](https://learn.microsoft.com/ja-jp/fabric/get-started/roles-workspaces) | 1 |
 | 4 | [ワークスペースへのアクセス権をユーザーに付与する](https://learn.microsoft.com/ja-jp/fabric/get-started/give-access-workspaces) | 1 |
 
+### 1.3. L300
 
-## 4. OneLake (38min)
+N/A
 
-### 4.1. L200 (38min)
 
-#### 4.1.1. 概要 (17min)
+---
+
+
+## 2. OneLake (38min)
+
+### 2.1. L100
+
+N/A
+
+### 2.2. L200 (38min)
+
+#### 2.2.1. 概要 (17min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -138,7 +164,7 @@ Note:
 * [演習 - Microsoft Fabric Lakehouse でデータを作成して取り込む \| Microsoft Fabric でのレイクハウスの概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-lakehouses/4-exercise-lakehouse)
 * [知識チェック \| Microsoft Fabric でのレイクハウスの概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-lakehouses/5-knowledge-check)
 
-#### 4.1.2. 機能 (21min)
+#### 2.2.2. 機能 (21min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -151,37 +177,59 @@ Note:
 | 7 | [OneLake のセキュリティ](https://learn.microsoft.com/ja-jp/fabric/onelake/onelake-security) | 2 |
 | 8 | [Microsoft Fabric 決定ガイド: データ ウェアハウスまたはレイクハウス](https://learn.microsoft.com/ja-jp/fabric/get-started/decision-guide-warehouse-lakehouse) | 3 |
 
+### 2.3. L300
 
-## 5. Power BI (13min)
+N/A
 
-### 5.1. L200 (13min)
 
-#### 5.1.1. 概要 (6min)
+---
+
+
+## 3. Power BI (13min)
+
+### 3.1. L100
+
+N/A
+
+### 3.2. L200 (13min)
+
+#### 3.2.1. 概要 (6min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [チュートリアル: Power BI ユーザー向け Fabric](https://learn.microsoft.com/ja-jp/power-bi/fundamentals/fabric-get-started) | 6 |
 
-#### 5.1.2. Direct Lake (Preview) (7min)
+#### 3.2.2. Direct Lake (Preview) (7min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [Direct Lake (プレビュー)](https://learn.microsoft.com/ja-jp/power-bi/enterprise/directlake-overview) | 6 |
 | 2 | [PBI レポートでのダイレクト レイク モードのしくみ](https://learn.microsoft.com/ja-jp/fabric/data-engineering/lakehouse-pbi-reporting) | 1 |
 
+### 3.3. L300
 
-## 6. Synapse Data Engineering (65min)
+N/A
 
-### 6.1. L200 (65min)
 
-#### 6.1.1. 概要 (2min)
+---
+
+
+## 4. Synapse Data Engineering (65min)
+
+### 4.1. L100
+
+N/A
+
+### 4.2. L200 (65min)
+
+#### 4.2.1. 概要 (2min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [Microsoft Fabric のデータ エンジニアリングとは](https://learn.microsoft.com/ja-jp/fabric/data-engineering/data-engineering-overview) | 1 |
 | 2 | [Microsoft Fabric の用語 - Synapse Data Engineering](https://learn.microsoft.com/ja-jp/fabric/get-started/fabric-terminology#synapse-data-engineering) | 1 |
 
-#### 6.1.2. レイクハウス (16min)
+#### 4.2.2. レイクハウス (16min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -196,7 +244,7 @@ Note:
 | 9 | [クイック スタート: データをコピーする最初のパイプラインを作成する](https://learn.microsoft.com/ja-jp/fabric/data-factory/create-first-pipeline-with-sample-data) | 2 | Quick start|
 | 10 | [コピー アシスタントを使用してAzure SQL DB から Lakehouse にデータを移動する](https://learn.microsoft.com/ja-jp/fabric/data-factory/tutorial-move-data-lakehouse-copy-assistant) | 2 | Tutorial |
 
-#### 6.1.3. Delta Lake (6min)
+#### 4.2.3. Delta Lake (6min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -204,7 +252,7 @@ Note:
 | 2 | [Delta Lake とは](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake) | 2 |
 | 3 | [Delta Lake テーブルへの読み込み](https://learn.microsoft.com/ja-jp/fabric/data-engineering/load-to-tables) | 1 |
 
-#### 6.1.4. Apache Spark (17min)
+#### 4.2.4. Apache Spark (17min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -215,13 +263,13 @@ Note:
 | 5 | [Microsoft Fabric の Spark ワークスペース管理設定](https://learn.microsoft.com/ja-jp/fabric/data-engineering/workspace-admin-settings) | 2 |
 | 6 | [Apache Spark ワークスペースの管理設定に関する FAQ](https://learn.microsoft.com/ja-jp/fabric/data-engineering/spark-admin-settings-faq) | 4 |
 
-#### 6.1.5. ノートブック (4min)
+#### 4.2.5. ノートブック (4min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [Microsoft Fabric ノートブックの使用方法](https://learn.microsoft.com/ja-jp/fabric/data-engineering/how-to-use-notebook) | 4 |
 
-#### 6.1.6. チュートリアル (20min)
+#### 4.2.6. チュートリアル (20min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -233,12 +281,23 @@ Note:
 | 6 | [Lakehouse チュートリアル: Microsoft Fabric でレポートを作成する](https://learn.microsoft.com/ja-jp/fabric/data-engineering/tutorial-lakehouse-build-report) | 3 | Tutorial |
 | 7 | [Lakehouse チュートリアル: Fabric リソースをクリーンアップする](https://learn.microsoft.com/ja-jp/fabric/data-engineering/tutorial-lakehouse-clean-up) | 1 | Tutorial |
 
+### 4.3. L300
 
-## 7. Data Factory (108min)
+N/A
 
-### 7.1. L200 (108min)
 
-#### 7.1.1. 概要 (6min)
+---
+
+
+## 5. Data Factory (108min)
+
+### 5.1. L100
+
+N/A
+
+### 5.2. L200 (108min)
+
+#### 5.2.1. 概要 (6min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -246,7 +305,7 @@ Note:
 | 2 | [Microsoft Fabric の用語 - Data Factory](https://learn.microsoft.com/ja-jp/fabric/get-started/fabric-terminology#data-factory) | 1 |
 | 3 | [Azure Data Factoryから Microsoft Fabric の Data Factory へのアクセス](https://learn.microsoft.com/ja-jp/fabric/data-factory/compare-fabric-data-factory-and-azure-data-factory) | 3 |
 
-#### 7.1.2. コネクタ (8min)
+#### 5.2.2. コネクタ (8min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -255,7 +314,7 @@ Note:
 | 3 | [Azure Blob Storage コネクタの概要](https://learn.microsoft.com/ja-jp/fabric/data-factory/connector-azure-blob-storage-overview) | 1 |
 | 4 | [Azure Blob Storage接続を作成する方法](https://learn.microsoft.com/ja-jp/fabric/data-factory/connector-azure-blob-storage) | 4 |
 
-#### 7.1.3. パイプライン (45min)
+#### 5.2.3. パイプライン (45min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -280,7 +339,7 @@ Note:
 * [演習 - パイプラインを使用してデータを取り込む \| Microsoft Fabric で Data Factory パイプラインを使用する](https://learn.microsoft.com/ja-jp/training/modules/use-data-factory-pipelines-fabric/6-exercise-pipelines)
 * [知識チェック \| Microsoft Fabric で Data Factory パイプラインを使用する](https://learn.microsoft.com/ja-jp/training/modules/use-data-factory-pipelines-fabric/7-knowledge-check)
 
-#### 7.1.4. データフロー (28min)
+#### 5.2.4. データフロー (28min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -301,7 +360,7 @@ Note:
 * [演習 - Microsoft Fabric でデータフロー (Gen2) を作成して使用する \| Microsoft Fabric でデータフロー Gen2 を使用してデータを取り込む](https://learn.microsoft.com/ja-jp/training/modules/use-dataflow-gen-2-fabric/5-exercise)
 * [知識チェック \| Microsoft Fabric でデータフロー Gen2 を使用してデータを取り込む](https://learn.microsoft.com/ja-jp/training/modules/use-dataflow-gen-2-fabric/6-knowledge-check)
 
-#### 7.1.5. その他/共通 (21min)
+#### 5.2.5. その他/共通 (21min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -312,12 +371,23 @@ Note:
 | 5 | [モジュール 3: Data Factory を使用して通知を自動化して送信する](https://learn.microsoft.com/ja-jp/fabric/data-factory/tutorial-end-to-end-integration) | 3 | Quick start guide |
 | 6 | [Microsoft Fabric の意思決定ガイド: コピー アクティビティ、データフロー、または Spark](https://learn.microsoft.com/ja-jp/fabric/get-started/decision-guide-pipeline-dataflow-spark) | 2 |
 
+### 5.3. L300
 
-## 8. Synapse Data Warehouse (88min)
+N/A
 
-### 8.1. L200 (88min)
 
-#### 8.1.1. 概要 (37min)
+---
+
+
+## 6. Synapse Data Warehouse (88min)
+
+### 6.1. L100
+
+N/A
+
+### 6.2. L200 (88min)
+
+#### 6.2.1. 概要 (37min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -331,21 +401,21 @@ Note:
 | 8 | [Microsoft Fabric でサンプル ウェアハウスを作成する](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/create-warehouse-sample) | 2 | How-to |
 | 9 | [倉庫の設定とコンテキスト メニュー](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/settings-context-menus) | 1 |
 
-#### 8.1.2. データの取り込み (7min)
+#### 6.2.2. データの取り込み (7min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [ウェアハウスにデータを取り込む](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/ingest-data) | 4 |
 | 2 | [COPY ステートメントを使用してウェアハウスにデータを取り込む](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/ingest-data-copy) | 3 | Tutorial |
 
-#### 8.1.3. 接続とセキュリティ (6min)
+#### 6.2.3. 接続とセキュリティ (6min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [Microsoft Fabric でのデータ ウェアハウスへの接続](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/connectivity) | 5 |
 | 2 | [Microsoft Fabric でのデータ ウェアハウスのセキュリティ](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/security) | 1 |
 
-#### 8.1.4. データの表示 (13min)
+#### 6.2.4. データの表示 (13min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -354,7 +424,7 @@ Note:
 | 3 | [ビジュアル クエリ エディターを使用したクエリ](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/visual-query-editor) | 2 | How-to |
 | 4 | [SQL クエリ エディターを使用したクエリ](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/sql-query-editor) | 4 | How-to |
 
-#### 8.1.5. データのモデリング (15min)
+#### 6.2.5. データのモデリング (15min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -364,7 +434,7 @@ Note:
 | 4 | [Microsoft Fabric のデータ ウェアハウスのデータ モデルでリレーションシップを定義する](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/data-modeling-defining-relationships) | 2 |
 | 5 | [Microsoft Fabric と Power BI Desktop のPower BI サービスでレポートを作成する](https://learn.microsoft.com/ja-jp/fabric/data-warehouse/reports-power-bi-service) | 2 | How-to |
 
-#### 8.1.6. チュートリアル1 (10min)
+#### 6.2.6. チュートリアル1 (10min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -379,12 +449,23 @@ Note:
 * [演習 - データ ウェアハウスでデータを分析する \| Microsoft Fabric でのデータ ウェアハウスの概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-data-warehouse/7-exercise)
 * [知識チェック \| Microsoft Fabric でのデータ ウェアハウスの概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-data-warehouse/8-knowledge-check)
 
+### 6.3. L300
 
-## 9. Synapse Real-Time Analytics (88min)
+N/A
 
-### 9.1. L200 (88min)
 
-#### 9.1.1. 概要 (14min)
+---
+
+
+## 7. Synapse Real-Time Analytics (88min)
+
+### 7.1. L100
+
+N/A
+
+### 7.2. L200 (88min)
+
+#### 7.2.1. 概要 (14min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -394,7 +475,7 @@ Note:
 | 4 | [Real-Time Analytics と Azure Data Explorerの違いは何ですか?](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/realtime-analytics-compare) | 3 |
 | 5 | [Microsoft Fabric の用語 - Synapse Real-Time Analytics](https://learn.microsoft.com/ja-jp/fabric/get-started/fabric-terminology#synapse-real-time-analytics) | 1 |
 
-#### 9.1.2. イベントストリーム (20min)
+#### 7.2.2. イベントストリーム (20min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -406,22 +487,22 @@ Note:
 | 6 | [Eventstream アイテム内のデータをプレビューする](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/event-streams/preview-data) | 1 | How-to |
 | 7 | [リアルタイム イベントの取り込み、フィルター処理、変換を行い、Delta Lake 形式で Microsoft Fabric Lakehouse に送信する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/event-streams/transform-and-stream-real-time-events-to-lakehouse) | 5 | Tutorial |
 
-#### 9.1.3. KQL データベース (19min)
+#### 7.2.3. KQL データベース (19min)
 
-##### 9.1.3.1. 概要
+##### 7.2.3.1. 概要
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [KQL データベースとテーブルを理解する \| Microsoft Fabric での Real-Time Analytics の概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-kusto-fabric/3-describe-kusto-databases-tables) | 5 | Training |
 
-##### 9.1.3.2. データベースとテーブルの作成
+##### 7.2.3.2. データベースとテーブルの作成
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [KQL データベースを作成する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/create-database) | 1 | How-to |
 | 2 | [空のテーブルを作成する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/create-empty-table) | 1 | How-to |
 
-##### 9.1.3.3. データの取得
+##### 7.2.3.3. データの取得
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -429,16 +510,16 @@ Note:
 | 2 | [BLOB コンテナーからデータを取得する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/get-data-blob-container) | 2 | How-to |
 | 3 | [BLOB からデータを取得する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/get-data-blob) | 3 | How-to |
 
-##### 9.1.3.4. Data Factory との接続
+##### 7.2.3.4. Data Factory との接続
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [コピー アクティビティで KQL データベースを構成する方法](https://learn.microsoft.com/ja-jp/fabric/data-factory/connector-kql-database-copy-activity) | 3 | How-to |
 | 2 | [データフローで Azure Data Explorer (Kusto) に接続する](https://learn.microsoft.com/ja-jp/fabric/data-factory/connector-kusto-dataflows) | 2 | How-to |
 
-#### 9.1.4. KQL (25min)
+#### 7.2.4. KQL (25min)
 
-##### 9.1.4.1. 概要
+##### 7.2.4.1. 概要
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -455,38 +536,49 @@ Note:
 * [演習: Fabric で Synapse Real-Time Analytics を探索する \| Microsoft Fabric での Real-Time Analytics の概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-kusto-fabric/5-exercise-use-kusto-query-data-onelake)
 * [知識チェック \| Microsoft Fabric での Real-Time Analytics の概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-kusto-fabric/6-knowledge-check)
 
-#### 9.1.5. KQL クエリセット (2min)
+#### 7.2.5. KQL クエリセット (2min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [KQL クエリセット内のデータのクエリを実行する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/kusto-query-set) | 2 | How-to |
 
-#### 9.1.6. OneLake との統合 (3min)
+#### 7.2.6. OneLake との統合 (3min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [1 つの論理コピー](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/onelake-mirroring) | 2 | How-to |
 | 2 | [OneLake でデータにアクセスするためのショートカットを作成する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/onelake-shortcut) | 1 | How-to |
 
-#### 9.1.7. Microsoft Fabric ノートブック からの利用 (2min)
+#### 7.2.7. Microsoft Fabric ノートブック からの利用 (2min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [チュートリアル: Apache Spark でノートブックを使用して KQL データベースに対してクエリを実行する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/spark-connector) | 2 | Tutorial |
 
-#### 9.1.8. Power BI からの接続 (3min)
+#### 7.2.8. Power BI からの接続 (3min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [Power BI レポートでデータを視覚化する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/create-powerbi-report) | 1 | How-to |
 | 2 | [Power BI Desktopで KQL データベースのデータを使用する](https://learn.microsoft.com/ja-jp/fabric/real-time-analytics/power-bi-data-connector) | 2 | How-to |
 
+### 7.3. L300
 
-## 10. Synapse Data Science (267min)
+N/A
 
-### 10.1. L200 (267min)
 
-#### 10.1.1. 概要 (11min)
+---
+
+
+## 8. Synapse Data Science (267min)
+
+### 8.1. L100
+
+N/A
+
+### 8.2. L200 (267min)
+
+#### 8.2.1. 概要 (11min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -495,7 +587,7 @@ Note:
 | 3 | [Microsoft Fabric のData Scienceとは](https://learn.microsoft.com/ja-jp/fabric/data-science/data-science-overview) | 3 |
 | 4 | [Microsoft Fabric の用語 - Synapse Data Science](https://learn.microsoft.com/ja-jp/fabric/get-started/fabric-terminology#synapse-data-science) | 1 |
 
-#### 10.1.2. データの準備 (6min)
+#### 8.2.2. データの準備 (6min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -506,7 +598,7 @@ Note:
 
 * [Data Wrangler (Preview)](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler)
 
-#### 10.1.3. 実験とモデル (23min)
+#### 8.2.3. 実験とモデル (23min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -521,7 +613,7 @@ Note:
 * [演習 - Microsoft Fabric でモデルをトレーニングして追跡する \| Microsoft Fabric でのデータ サイエンスの概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-data-science-fabric/5-exercise-use-notebook)
 * [知識チェック \| Microsoft Fabric でのデータ サイエンスの概要](https://learn.microsoft.com/ja-jp/training/modules/get-started-data-science-fabric/6-knowledge-check)
 
-#### 10.1.4. Python (12min) ※Optional
+#### 8.2.4. Python (12min) ※Optional
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -534,7 +626,7 @@ Note:
 
 * [Quickstart: Pandas API on Spark](https://spark.apache.org/docs/3.3.0/api/python/getting_started/quickstart_ps.html)
 
-#### 10.1.5. R (46min) ※Optional
+#### 8.2.5. R (46min) ※Optional
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -547,16 +639,16 @@ Note:
 | 7 | [チュートリアル: R を使用したアボカドの価格予測](https://learn.microsoft.com/ja-jp/fabric/data-science/r-avocado) | 6 | Tutorial |
 | 8 | [フライト遅延予測](https://learn.microsoft.com/ja-jp/fabric/data-science/r-flight-delay) | 7 | Tutorial |
 
-#### 10.1.6. Apache Spark (65min)
+#### 8.2.6. Apache Spark (65min)
 
-##### 10.1.6.1. 概要
+##### 8.2.6.1. 概要
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
 | 1 | [Microsoft Fabric の Spark コンピューティングとは](https://learn.microsoft.com/ja-jp/fabric/data-engineering/spark-compute?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json) | 4 |
 | 2 | [Fabric の Apache Spark ランタイム](https://learn.microsoft.com/ja-jp/fabric/data-engineering/runtime?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json) | 7 |
 
-##### 10.1.6.2. ワークスペース
+##### 8.2.6.2. ワークスペース
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -565,7 +657,7 @@ Note:
 | 3 | [ワークスペース アイテムの最近の実行](https://learn.microsoft.com/ja-jp/fabric/data-engineering/spark-item-recent-runs?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json) | 1 |
 | 4 | [Apache Spark ワークスペースの管理設定に関する FAQ](https://learn.microsoft.com/ja-jp/fabric/data-engineering/spark-admin-settings-faq?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json) | 4 |
 
-##### 10.1.6.3. 開発
+##### 8.2.6.3. 開発
 
 ###### 10.1.6.3.1. 概要
 
@@ -591,7 +683,7 @@ Note:
 | 4 | [高速、条件付き、k-ニアレスト ネイバーを使用したカルチャとメディア全体のアートの探索](https://learn.microsoft.com/ja-jp/fabric/data-science/conditional-k-nearest-neighbors-exploring-art) | 7 | How-to |
 | 5 | [レシピ: 分離フォレストを使用した多変量異常検出](https://learn.microsoft.com/ja-jp/fabric/data-science/isolation-forest-multivariate-anomaly-detection) | 4 | How-to |
 
-#### 10.1.7. チュートリアル (E2E) (32min)
+#### 8.2.7. チュートリアル (E2E) (32min)
 
 | # | タイトル | Time (min) | 備考 |
 | ---:|:--- | ---:| --- |
@@ -604,12 +696,22 @@ Note:
 | 7 | [パート 5: バッチ スコアリングを実行し、予測をレイクハウスに保存する](https://learn.microsoft.com/ja-jp/fabric/data-science/tutorial-data-science-batch-scoring) | 3 | Tutorial |
 | 8 | [パート 6: 予測を視覚化する Power BI レポートを作成する](https://learn.microsoft.com/ja-jp/fabric/data-science/tutorial-data-science-create-report) | 3 | Tutorial |
 
+### 8.3. L300
 
-## 11. Data Activator
+N/A
+
+
+---
+
+
+## 9. Data Activator
 
 TBA
 
 
-## 12. 管理者およびガバナンス
+---
+
+
+## 10. 管理者およびガバナンス
 
 TBA
